@@ -43,3 +43,8 @@ html, body {
     font-size: 3rem;
     font-family: sans-serif;
 }
+.footer p {
+    margin-left: 20px;
+    font-family: sans-serif ;
+    font-weight: bold;
+}
