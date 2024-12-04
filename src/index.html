@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Web/App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Menu Button -->
+        <button class="menu-btn" id="menu-toggle">
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <!-- App Logo -->
+        <a href="index.html" class="app-logo-container">
+            <img src="assets/images/Logo.png" alt="App Logo" class="app-logo">
+        </a>
+        <h1 class="page-title">TRANG CHỦ</h1>
+
+        <!-- Dropdown Menu -->
+        <nav class="dropdown-menu" id="dropdown-menu">
+            <ul>
+                <li class="nested-dropdown">
+                    <a href="#services" class="nested-menu-btn">Dịch vụ chính ▼</a>
+                    <ul class="nested-menu">
+                        <li><a href="#contact-doctor">Đăng kí khám bệnh ngay</a></li>
+                        <li><a href="health-blog.html">Blog Sức khỏe</a></li>
+                        <li><a href="mental-test.html">Test Tâm lý</a></li>
+                        <li><a href="service-pack.html">Các gói cao cấp</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">Về chúng tôi</a></li>
+                <li><a href="#contact">Liên lạc với chúng tôi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+        <!-- Doctor Image Section -->
+        <div class="doctor-image-container">
+            <img src="assets/images/doctor.png" alt="Doctor Section Image" class="doctor-image">
+            <button class="red-box-button" id="red-box-btn">Tìm hiểu thêm</button>
+        </div>
+
+        <!-- Content Containers -->
+        <div class="aboutus-image-container" id="about">
+            <img src="assets/images/aboutus.png" alt="About Us Image" class="aboutus-image">
+        </div>
+        
+        <div class="outer-container" id="contact-doctor">
+            <div class="two-column-container">
+                <div class="description">
+                    <h2>ĐĂNG KÝ ĐỂ BIẾT THÊM CHI TIẾT VỀ DỊCH VỤ</h2>
+                    <p>
+                        Đăng ký thông tin ngay và tổng đài của SOUL sẽ liên hệ bạn qua điện thoại để tư vấn thêm về dịch vụ.
+                    </p>
+                </div>
+            
+                <!-- Right Side: Form -->
+                <div class="form-container">
+                    <form action="submit_form.php" method="post">
+                        <input type="text" name="fullname" placeholder="Họ và Tên" required>
+                        <input type="text" name="phone" placeholder="Số điện thoại" required>
+                        <textarea name="message" placeholder="Để lại lời nhắn cho chúng tôi" rows="4" required></textarea>
+                        <button type="submit" class="submit-button">Đăng ký ngay</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-us-container" id="contact">
+            <!-- Left Column -->
+            <div class="contact-image">
+                <img src="assets/images/download.png" alt="Contact Us" class="download-image"/>
+                <h2 class="download-heading">Tải ngay tại:</h2>
+                <div class="app-store-links">
+                    <a href="taiapp.html" class="app-logo-container">
+                        <img src="assets/images/store.png" alt="GGPlay Logo" class="store-logo">
+                    </a>
+                </div>
+            </div>
+        
+            <!-- Separator -->
+            <div class="separator"></div>
+        
+            <!-- Right Column -->
+            <div class="contact-details">
+                <h2>Liên lạc với chúng tôi:</h2>
+                <ul>
+                    <li>
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="assets/images/fb.png" alt="Facebook Icon" class="icon">
+                            <span class="icon-text">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="assets/images/ins.png" alt="Instagram Icon" class="icon">
+                            <span class="icon-text">Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://zalo.com" target="_blank">
+                            <img src="assets/images/zalo.png" alt="Zalo Icon" class="icon">
+                            <span class="icon-text">Zalo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:contact@yourwebsite.com" target="_blank">
+                            <img src="assets/images/email.png" alt="Gmail Icon" class="icon">
+                            <span class="icon-text">Email</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>        
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 SOUL. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
